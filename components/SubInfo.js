@@ -80,8 +80,19 @@ export const EndDate = () => {
 
 export const EthPrice = ({ price }) => {
     return (
-        <View>
-            <Text>EthPrice</Text>
+        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+            <Image
+                source={assets.eth}
+                resizeMode="contain"
+                style={{ height: 20, width: 20, marginRight: 2 }}
+            />
+            <Text style={{
+                fontFamily: FONTS.medium,
+                fontSize: SIZES.font,
+                color: COLORS.primary
+            }}>
+                {price}
+            </Text>
         </View>
     )
 }
