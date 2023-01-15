@@ -1,10 +1,34 @@
 import React from "react";
-import { FlatList, SafeAreaView, Text, View } from "react-native";
+import { FlatList, SafeAreaView, Text, View, Image, StatusBar } from "react-native";
 
-import { FocusedStatusBar, DetailsBid, DetailsHeader } from '../components';
-import { ReactButton } from "../components/Buttons";
-import { SHADOWS, SIZES } from "../constants";
+import { FocusedStatusBar, DetailsBid } from '../components';
+import { CircleButton, ReactButton } from "../components/Buttons";
+import { SHADOWS, SIZES, assets } from "../constants";
 
+const DetailsHeader = ({ data, navigation }) => {
+  return (
+    <View style={{ width: '100%', height: 373 }}>
+      <Image
+        source={data.image}
+        resizeMode="cover"
+        style={{ width: '100%', height: '100%' }}
+      />
+
+      <CircleButton
+        imgUrl={assets.left}
+        left={10}
+        top={StatusBar.currentHeight + 10}
+        handlePress={() => navigation.goBack()}
+      />
+
+      <CircleButton
+        imgUrl={assets.heart}
+        right={10}
+        top={StatusBar.currentHeight + 10}
+      />
+    </View>
+  );
+}
 
 const Details = ({ route, navigation }) => {
   const { data } = route.params;
@@ -45,7 +69,7 @@ const Details = ({ route, navigation }) => {
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
         ListHeaderComponent={() => (
           <React.Fragment>
-            <DetailsHeader />
+            <DetailsHeader data={data} navigation={navigation} />
           </React.Fragment>
         )}
       />
