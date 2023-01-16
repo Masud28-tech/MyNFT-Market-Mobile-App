@@ -23,7 +23,7 @@ const DetailsDesc = ({ data }) => {
 
         <EthPrice price={data.price} />
       </View>
-
+      
       <View style={{ marginVertical: SIZES.extraLarge * 1.5 }}>
         <Text style={{
           fontFamily: FONTS.semiBold,

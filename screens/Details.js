@@ -3,7 +3,7 @@ import { FlatList, SafeAreaView, Text, View, Image, StatusBar } from "react-nati
 
 import { FocusedStatusBar, DetailsBid, SubInfo, DetailsDesc } from '../components';
 import { CircleButton, ReactButton } from "../components/Buttons";
-import { SHADOWS, SIZES, assets } from "../constants";
+import { SHADOWS, SIZES, FONTS, COLORS, assets } from "../constants";
 
 const DetailsHeader = ({ data, navigation }) => {
   return (
@@ -62,7 +62,7 @@ const Details = ({ route, navigation }) => {
 
       <FlatList
         data={data.bids}
-        renderItem={(item) => <DetailsBid bid={item} />}
+        renderItem={(item) => <DetailsBid bid={item.item} />}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: SIZES.extraLarge * 3 }}
@@ -73,6 +73,16 @@ const Details = ({ route, navigation }) => {
 
             <View style={{ padding: SIZES.font }}>
               <DetailsDesc data={data} />
+
+              {data.bids.length > 0 && (
+                <Text style={{
+                  fontFamily: FONTS.semiBold,
+                  fontSize: SIZES.font,
+                  color: COLORS.primary
+                }}>
+                  Current Bid
+                </Text>
+              )}
             </View>
           </React.Fragment>
         )}
