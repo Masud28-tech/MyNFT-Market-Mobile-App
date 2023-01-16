@@ -1,7 +1,7 @@
 import React from "react";
 import { FlatList, SafeAreaView, Text, View, Image, StatusBar } from "react-native";
 
-import { FocusedStatusBar, DetailsBid, SubInfo } from '../components';
+import { FocusedStatusBar, DetailsBid, SubInfo, DetailsDesc } from '../components';
 import { CircleButton, ReactButton } from "../components/Buttons";
 import { SHADOWS, SIZES, assets } from "../constants";
 
@@ -61,7 +61,7 @@ const Details = ({ route, navigation }) => {
       </View>
 
       <FlatList
-        data={data.bids} 
+        data={data.bids}
         renderItem={(item) => <DetailsBid bid={item} />}
         keyExtractor={(item) => item.id}
         showsVerticalScrollIndicator={false}
@@ -70,9 +70,13 @@ const Details = ({ route, navigation }) => {
           <React.Fragment>
             <DetailsHeader data={data} navigation={navigation} />
             <SubInfo />
+
+            <View style={{ padding: SIZES.font }}>
+              <DetailsDesc data={data} />
+            </View>
           </React.Fragment>
         )}
-        
+
       />
 
     </SafeAreaView>
