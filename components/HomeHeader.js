@@ -12,11 +12,22 @@ const HomeHeader = ({ onSearch }) => {
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <Image
-          source={assets.logo}
-          resizeMode="contain"
-          style={{ width: 90, height: 25 }}
-        />
+        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+          <Image
+            source={assets.nftLogo}
+            resizeMode="contain"
+            style={{ width: 50, height: 50, color: COLORS.white }}
+          />
+          <Text style={{
+            fontFamily: FONTS.semiBold,
+            fontSize: SIZES.large * 1.2,
+            color: COLORS.white,
+            marginTop: SIZES.base / 2,
+            marginLeft:SIZES.base
+          }}>
+            MyNFT Market
+          </Text>
+        </View>
 
         <View style={{ width: 45, height: 45 }}>
           <Image
