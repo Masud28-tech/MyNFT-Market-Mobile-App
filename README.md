@@ -9,7 +9,7 @@
 - Search your nft: Search bar with sort or search by name functionality.
 
 ---
-<img src="https://camo.githubusercontent.com/..." data-canonical-src="https://user-images.githubusercontent.com/65458743/215124239-41944a31-5cf4-46c0-bbe8-af1d85796ed8.jpeg" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/65458743/215124239-41944a31-5cf4-46c0-bbe8-af1d85796ed8.jpeg" width="100" height="100">
 ![nft app showcase pic 2](https://user-images.githubusercontent.com/65458743/215124239-41944a31-5cf4-46c0-bbe8-af1d85796ed8.jpeg | width=200 height=200)
 ---
 ![nft app showcase search bar pic](https://user-images.githubusercontent.com/65458743/215124457-0e5dba67-8235-4804-ae8e-e39a58f9fcd3.jpeg | width=200 height=200)
