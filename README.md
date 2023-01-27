@@ -16,10 +16,8 @@
 ---
 
 <img src="https://user-images.githubusercontent.com/65458743/215124563-e2fb3f39-ff4f-465f-892d-98832e277951.jpeg" width="400" height="700">
-![nft app showcase pic 3](https://user-images.githubusercontent.com/65458743/215124563-e2fb3f39-ff4f-465f-892d-98832e277951.jpeg | width=200 height=200)
 ---
 
 <img src="https://user-images.githubusercontent.com/65458743/215124107-ced79fe9-1468-4454-9022-bab315a21037.jpeg" width="400" height="700">
-![nft app showcase pic 1](https://user-images.githubusercontent.com/65458743/215124107-ced79fe9-1468-4454-9022-bab315a21037.jpeg | width=200 height=200)
 ---
 
